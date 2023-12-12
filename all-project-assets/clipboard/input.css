@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.section-container {
+  @apply max-w-6xl mx-auto text-center;
+}
+.section-content {
+  @apply max-w-3xl mx-auto leading-9 text-center text-grayishBlue;
+}
+
+.button-container {
+  @apply p-4 px-8 rounded-full shadow-lg duration-200 hover:opacity-80;
+}
+
+body {
+  background-image: url("../images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (max-width: 578px) {
+  body {
+    background-image: url("../images/bg-header-mobile.png");
+  }
+}
